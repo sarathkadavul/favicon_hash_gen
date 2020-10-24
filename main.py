@@ -12,7 +12,7 @@ def method_name():
        hash = mmh3.hash(favicon)
        shodan_url="https://www.shodan.io/search?query=http.favicon.hash:"+str(hash)
        return render_template("index.html", hash=str(hash),shodan_url=shodan_url,display="")
-    return render_template("index.html",hash="",shodan_url="",display="none")
+    return render_template("index.html",hash="",shodan_url=" ",display="none")
 
 if __name__ == '__main__':
     app.run()
