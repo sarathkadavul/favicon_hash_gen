@@ -15,4 +15,4 @@ def method_name():
     return render_template("index.html",hash="",shodan_url=" ",display="none")
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0',port=80)
